@@ -1,0 +1,16 @@
+YOUR_SSH_PUBKEY=~/.ssh/id_rsa.pub
+YOUR_SSH_PK=~/.ssh/id_rsa
+
+LOCAL_NET=192.168.1.0/24
+VIRTHOST=rhvirt.casa
+
+TRIPLEO_USER=tripleo
+
+VIRTD_BRIDGE=brovc
+BRIDGE_ADDR=192.168.24.123
+BRIDGE_NET=192.168.24.0/24
+BRIDGE_MASK=24
+UNDERCLOUD_IP=192.168.24.1
+
+SSH_OPTS="-o LogLevel=ERROR -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
+UNDERCLOUD_SSH="ssh -o LogLevel=ERROR -F /home/tripleo/.quickstart/ssh.config.ansible undercloud"
